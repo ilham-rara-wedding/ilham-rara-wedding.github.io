@@ -321,10 +321,24 @@
             <li class="list-group-item">
               <div class="fw-bold">BCA</div>
               7435507930 - Ilham Assegaf
+              <input type="text" id="rekIlham" value="7435507930" disabled readonly hidden>
+              <div>
+                <button type="button" class="btn btn-outline-secondary" onclick="copyIlham()"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; margin-top: 10px;">
+                  Salin no Rek
+                </button>
+              </div>
             </li>
             <li class="list-group-item">
               <div class="fw-bold">BCA</div>
               7112446055 - Amaranida Nur Jihan
+              <input type="text" id="rekRara" value="7112446055" disabled readonly hidden>
+              <div>
+                <button type="button" class="btn btn-outline-secondary" onclick="copyRara()"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; margin-top: 10px">
+                  Salin no Rek
+                </button>
+              </div>
             </li>
           </ul>
         </div>
@@ -502,6 +516,26 @@
     namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
 
     document.querySelector('#nama').value = nama;
+  </script>
+
+  <script>
+    function copyIlham() {
+      var copyTextIlham = document.getElementById("rekIlham");
+
+      copyTextIlham.select();
+      copyTextIlham.setSelectionRange(0, 99999);
+
+      navigator.clipboard.writeText(copyTextIlham.value);
+    }
+
+    function copyRara() {
+      var copyTextRara = document.getElementById("rekRara");
+
+      copyTextRara.select();
+      copyTextRara.setSelectionRange(0, 99999);
+
+      navigator.clipboard.writeText(copyTextRara.value);
+    }
   </script>
 </body>
 
