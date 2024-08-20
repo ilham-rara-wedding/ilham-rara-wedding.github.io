@@ -465,6 +465,14 @@
     // }
 
     disableScroll();
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") {
+        song.play();
+      } else {
+        song.pause();
+      }
+    });
   </script>
 
   <script>
