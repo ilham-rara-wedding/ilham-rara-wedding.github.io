@@ -343,7 +343,7 @@ footer {
   padding: 3rem;
   background-color: var(--pink);
   color: white;
-  font-size: 0.7rem;
+  font-size: 70%;
 }
 
 footer a {
