@@ -46,6 +46,10 @@ body {
   font-size: 1.6 rem;
 }
 
+#dear {
+  margin-bottom: 4rem;
+}
+
 .hero p {
   font-size: 1.4rem;
 }
