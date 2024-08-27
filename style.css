@@ -100,7 +100,8 @@ body {
 .story h2,
 .gallery h2,
 .rsvp h2,
-.gifts h2 {
+.gifts h2,
+.surah h2 {
   color: var(--pink);
   font-family: "Sacramento";
   font-size: 5rem;
@@ -111,6 +112,11 @@ body {
   color: #444;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.surah h3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .home p {
@@ -149,9 +155,16 @@ body {
   color: var(--pink-heart);
 }
 
-.info {
+.surah {
   background-color: var(--bg);
   color: white;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.info {
+  /* background-color: var(--bg); */
+  color: var(--bg);
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
@@ -167,12 +180,12 @@ body {
 
 .info .card {
   background-color: rgba(255, 255, 255, 0.2) !important;
-  color: white !important;
-  border: 1px solid #999;
+  color: var(--bg) !important;
+  border: 1px solid var(--bg);
 }
 
 .info .card-header {
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid var(--bg);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
@@ -182,24 +195,49 @@ body {
 }
 
 .info .card-footer {
-  border-top: 1px solid #999;
+  border-top: 1px solid var(--bg);
   font-size: 0.9rem;
   font-weight: 300;
+}
+
+.info a {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+}
+
+.info a:hover {
+  background-color: var(--bg);
+  color: white;
+  border: 1px solid var(--bg);
 }
 
 .story,
 .gallery,
 .rsvp,
-.gifts {
+.gifts,
+.surah {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
 
-.story span,
+.story span
+
+/* .gallery span, */
+/* .gifts span */
+  {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
 .gallery span,
 .gifts span {
   text-transform: uppercase;
-  color: #666;
+  color: white;
   font-size: 0.9rem;
   letter-spacing: 1px;
   display: block;
@@ -212,6 +250,14 @@ body {
 .gifts p {
   font-size: 1rem;
   font-weight: 300;
+}
+
+.gifts {
+  background-color: var(--bg);
+}
+
+.surah p {
+  font-size: 1.1rem;
 }
 
 .timeline {
@@ -313,11 +359,11 @@ body {
 }
 
 .gallery {
-  background-color: #f5f5f5;
+  background-color: var(--bg);
 }
 
 .rsvp {
-  background-color: var(--bg);
+  background-color: white;
 }
 
 .rsvp h2 {
@@ -325,11 +371,11 @@ body {
 }
 
 .rsvp p {
-  color: white;
+  color: var(--bg);
 }
 
 .rsvp form label {
-  color: white;
+  color: var(--bg);
 }
 
 .rsvp button {
@@ -339,15 +385,27 @@ body {
 }
 
 .rsvp button:hover {
-  background-color: white;
-  color: var(--pink);
-  border: 1px solid white;
+  background-color: var(--bg);
+  color: white;
+  border: 1px solid var(--bg);
+}
+
+.gifts button {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+}
+
+.gifts button:hover {
+  background-color: var(--bg);
+  color: white;
+  border: 1px solid var(--bg);
 }
 
 footer {
   padding: 3rem;
-  background-color: var(--pink);
-  color: white;
+  background-color: white;
+  color: var(--bg);
   font-size: 70%;
 }
 
@@ -358,7 +416,7 @@ footer a {
 }
 
 footer a:hover {
-  color: white;
+  color: var(--pink);
 }
 
 footer li {
