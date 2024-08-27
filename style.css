@@ -47,7 +47,9 @@ body {
 }
 
 #dear {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
 }
 
 .hero p {
